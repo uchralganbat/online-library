@@ -57,7 +57,6 @@ function register(req, res, next) {
 }
 
 function orderSchema(req, res, next) {
-    console.log(req.user);
     const schema = Joi.object({
         date_shouldGive: Joi.date().required(),
         date_gave: Joi.date().empty(''),

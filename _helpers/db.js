@@ -36,5 +36,5 @@ async function initiliaze() {
     db.User.belongsTo(db.University, {
         foreignKey: 'fk_id_university'
     });
-    await sequelize.sync({alter: true});
+    await sequelize.sync({alter: false});
 }
